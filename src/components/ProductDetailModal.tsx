@@ -188,9 +188,6 @@ export default function ProductDetailModal({
     };
     return (
       <div className={`w-full max-w-[210px] sm:max-w-[240px] lg:max-w-none mx-auto aspect-square rounded-2xl flex items-center justify-center p-4 sm:p-6 relative overflow-hidden ${colorMap[type as keyof typeof colorMap] || "bg-stone-200 dark:bg-stone-950"}`}>
-        <div className="absolute top-4 left-4 font-mono text-[9px] text-stone-500 dark:text-stone-400 font-bold uppercase tracking-widest bg-white/70 dark:bg-stone-900/80 px-2 py-1 rounded">
-          Sertifikasi {product.badge.join(" & ")}
-        </div>
         
         <div className="transform scale-[0.68] sm:scale-85 md:scale-100 transition-transform duration-300 flex items-center justify-center w-full h-full">
           {/* Abstract Vector Icons for detail modals */}
@@ -285,6 +282,13 @@ export default function ProductDetailModal({
             {/* Left Visual Column */}
             <div className="md:col-span-5 flex flex-col gap-4">
               <div className="space-y-4 w-full max-w-[180px] sm:max-w-[220px] md:max-w-none mx-auto">
+                {product.badge && product.badge.length > 0 && (
+                  <div className="text-center md:text-left">
+                    <span className="inline-block px-2.5 py-1.5 bg-amber-500/10 dark:bg-amber-500/5 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg">
+                      Sertifikasi {product.badge.join(" & ")}
+                    </span>
+                  </div>
+                )}
                 {renderBigImage(product.image || "fashion")}
                 
                 {/* Trust Badges under image */}
