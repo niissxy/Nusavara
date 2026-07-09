@@ -1,0 +1,8 @@
+{
+  "name": "Nusavara Local Premium",
+  "description": "A premium local brand-commerce platform for high-quality Indonesian goods, integrating story-driven commerce, pre-orders, reseller channels, and smart loyalty features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
