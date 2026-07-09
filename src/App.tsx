@@ -2096,7 +2096,7 @@ export default function App() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <img 
-                src="/src/assets/images/nusavara_logo_1783569209711.jpg" 
+                src="/nusavara_logo.jpg" 
                 alt="Nusavara Logo" 
                 referrerPolicy="no-referrer"
                 className="w-8 h-8 rounded-full object-cover border border-amber-500/20"

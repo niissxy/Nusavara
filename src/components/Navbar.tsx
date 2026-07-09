@@ -274,7 +274,7 @@ export default function Navbar({
           >
             <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-amber-500/30 flex items-center justify-center bg-stone-950 group-hover:scale-105 transition-all shadow-md">
               <img
-                src="/src/assets/images/nusavara_logo_1783569209711.jpg"
+                src="/nusavara_logo.jpg"
                 alt="Nusavara Brand Logo"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
